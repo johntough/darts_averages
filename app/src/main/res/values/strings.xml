@@ -1,0 +1,23 @@
+<resources>
+    // welcome messages
+    <string name="app_name">Darts Average Calculator</string>
+    <string name="welcome_message">Darts Average Calculator!</string>
+
+    // error / warning messages
+    <string name="title_alert_dialog">Warning</string>
+    <string name="message_alert_no_internet_connection">No internet connection</string>
+
+    <string name="message_alert_invalid_score">Invalid score (must be 0 &#8211; 501)</string>
+    <string name="message_alert_invalid_number_of_darts">Invalid number of darts</string>
+    <string name="message_alert_empty_fields">Values must be entered before an average can be calculated</string>
+
+    // labels
+    <string name="number_of_darts_label">Number of Darts:</string>
+    <string name="remaining_score_label">Remaining Score:</string>
+    <string name="average_label">3 dart avg:</string>
+
+    // buttons
+    <string name="submit_button_text">Calculate Avg</string>
+
+    <color name="white">#FFFFFF</color>
+</resources>
