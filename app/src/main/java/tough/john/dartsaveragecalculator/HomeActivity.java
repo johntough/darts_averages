@@ -17,8 +17,8 @@ public class HomeActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
 
-        final Button button = (Button) findViewById(R.id.submitButton);
-        button.setOnClickListener(new View.OnClickListener() {
+        final Button submit_button = (Button) findViewById(R.id.submitButton);
+        submit_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
                 EditText numberOfDartsView = (EditText) findViewById(R.id.editTextNumberOfDarts);
@@ -48,6 +48,22 @@ public class HomeActivity extends BaseActivity {
                         threeDartAverageTextView.setText(String.format(Locale.UK, "%.2f", threeDartAverage));
                     }
                 }
+            }
+        });
+
+        final Button clear_button = (Button) findViewById(R.id.clearButton);
+        clear_button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                EditText numberOfDartsView = (EditText) findViewById(R.id.editTextNumberOfDarts);
+                EditText remainingScoreView = (EditText) findViewById(R.id.editTextRemainingScore);
+                TextView threeDartAverageTextView = (TextView) findViewById(R.id.textView3DartAverage);
+
+                numberOfDartsView.setText("");
+                remainingScoreView.setText("");
+                threeDartAverageTextView.setText("");
+
+                remainingScoreView.requestFocus();
             }
         });
     }

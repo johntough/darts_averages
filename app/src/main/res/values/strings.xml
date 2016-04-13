@@ -18,6 +18,7 @@
 
     // buttons
     <string name="submit_button_text">Calculate Avg</string>
+    <string name="clear_button_text">Clear</string>
 
     <color name="white">#FFFFFF</color>
 </resources>
